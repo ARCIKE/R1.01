@@ -349,7 +349,6 @@ class Pendu {
         }
     }
 
-
      /**
      * affiche un tableau d'entiers
      * @param t tableau d'entiers
