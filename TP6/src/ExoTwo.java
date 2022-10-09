@@ -27,11 +27,19 @@ public class ExoTwo {
         System.out.println("Test de la méthode sontTousDiff");
         int[] tab1 = {1, 2, 3, 4, 5};
         int[] tab2 = {6, 7, 8, 9, 10};
-        TestCasSontTousDiff(tab1, tab2, false);
+        TestCasSontTousDiff(tab1, tab2, true);
 
         int[] tab3 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int[] tab4 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         TestCasSontTousDiff(tab3, tab4, false);
+
+        int[] tab5 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int [] tab6 = {10, 11};
+        TestCasSontTousDiff(tab5, tab6, false);
+
+        int[] tab7 = {};
+        int[] tab8 = {};
+        TestCasSontTousDiff(tab7, tab8, true);
     }
 
     void TestCasSontTousDiff(int[] tab1, int[] tab2, boolean expected) {
@@ -40,7 +48,7 @@ public class ExoTwo {
         System.out.println("tab1 = " + Arrays.toString(tab1));
         System.out.println("tab2 = " + Arrays.toString(tab2));
         if (result == expected) {
-            System.out.println("Test réussi");
+            System.out.println("\u001B[32m Test réussi \u001B[0m");
         } else {
             System.out.println("Test échoué");
         }
